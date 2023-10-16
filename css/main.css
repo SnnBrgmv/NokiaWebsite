@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+header .header-top {
+    width: 100%;
+    background-color: #F3F3F3;
+}
+
+header .header-top ul {
+    padding: 10px 50px 10px 10px;
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    align-items: center;
+}
+
+header .header-top ul li {
+    padding: 0 25px;
+    transition: all .5s linear;
+}
+
+header .header-top ul li:hover {
+    padding: 0;
+    transition: all .5s linear;
+    border-bottom: 1px solid #005aff;
+}
+
+header .header-top ul li a {
+    text-decoration: none;
+    color: #1d1e20;
+}
+
+header .header-top ul li a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+header .header-bottom {
+    width: 100%;
+}
+
+header .header-bottom .header-bottom-nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-logo {
+    width: 14%;
+    height: 6vh;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-logo img {
+    width: 80%;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-list {
+    width: 80%;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-list ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 27px;
+    margin-top: 12px;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-list ul li {
+    transition: all .5s linear;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-list ul li a {
+    color: #0065ed;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-list ul li a:hover {
+    font-weight: bold;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-icon {
+    width: 11%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-icon a i {
+    color: #0065ed;
+    font-size: 1.5rem;
+}
+
+header .header-bottom .header-bottom-nav .header-bottom-nav-icon a:nth-child(2) i {
+    transform: rotate(90deg);
+}
+
+/* Main content */
+main {
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+main section.slider {
+    width: 100%;
+    height: 90vh;
+    background-image: url("../images/cinemagraph.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+main section.slider .slider-article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+
+main section.slider .slider-article h1 {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: .3px;
+}
+
+main section.slider .slider-article h1 sup {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+main section.slider .slider-article p {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: .3px;
+}
+
+main section.slider .slider-article .slider-article-icon {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+main section.slider .slider-article .slider-article-icon i {
+    width: 22%;
+    height: 8vh;
+    text-align: center;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 11px;
+}
+
+main section.slider .slider-article .slider-article-icon i:hover {
+    cursor: pointer;
+}
+
+main section.article {
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+main section.article .article-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+main section.article .article-container:hover {
+    cursor: pointer;
+}
+
+main section.article .article-container .article-container-banner {
+    width: 48%;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: start;
+    row-gap: 8px;
+}
+
+main section.article .article-container .article-container-banner i {
+    color: #0065ed;
+    font-size: 1.2rem;
+}
+
+main section.article .article-container .article-container-banner h2 {
+    color: #1d1e20;
+}
+
+main section.article .article-container .article-container-banner p {
+    color: #6e6e6e;
+}
+
+
+main section.earth {
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+main section.earth .earth-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+main section.earth .earth-container:hover {
+    cursor: pointer;
+}
+
+main section.earth .earth-container h2 {
+    color: #1d1e20;
+}
+
+main section.earth .earth-container i {
+    color: #0065ed;
+    font-size: 1.2rem;
+}
+
+main section.earth .earth-container p {
+    color: #6e6e6e;
+}
+
+main section.ms-team {
+    width: 100%;
+    height: 50vh;
+    background-image: url("../images/microsoftteams-image.jpeg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+main section.ms-team .ms-team-article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+
+main section.ms-team .ms-team-article h2 {
+    color: #fff;
+    letter-spacing: .2px;
+    font-weight: lighter;
+}
+
+main section.ms-team .ms-team-article p {
+    color: #fff;
+    letter-spacing: .6px;
+    font-weight: lighter;
+}
+
+main section.ms-team .ms-team-article button {
+    color: #005AFF;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+
+
+footer {
+    width: 100%;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+footer .footer-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-container div {
+    width: 100%;
+}
+
+footer .footer-container .footer-container-license {
+    display: flex;
+}
+
+footer .footer-container .footer-container-license>div:nth-child(1) {
+    width: 30%;
+}
+
+footer .footer-container .footer-container-license>div:nth-child(1) p {
+    color: #000;
+    letter-spacing: .3px;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+footer .footer-container .footer-container-license>div:nth-child(1) a {
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer .footer-container .footer-container-license>div:nth-child(1) i {
+    color: #0065ed;
+    transform: rotate(-45deg);
+    padding-right: 8px;
+    font-size: 1.3rem;
+}
+
+footer .footer-container .footer-container-license>div:nth-child(2) {
+    width: 70%;
+}
+
+footer .footer-container .footer-container-license>div:nth-child(2) ul {
+    display: flex;
+    flex-wrap: wrap;
+}
